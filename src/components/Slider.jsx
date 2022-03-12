@@ -56,7 +56,7 @@ const Image = styled.div`
     background-size: cover;
     height: 100%;
 `;
-const InforContainer = styled.div`
+const InfoContainer = styled.div`
     flex: 1;
     padding: 50px;
 `;
@@ -101,11 +101,11 @@ const Slider = () => {
                         <ImageContainer>
                             <Image src={item.img} />
                         </ImageContainer>
-                        <InforContainer>
+                        <InfoContainer>
                             <Title>{item.title}</Title>
                             <Description>{item.description}</Description>
                             <Button>SHOW NOW</Button>
-                        </InforContainer>
+                        </InfoContainer>
                     </Slide>
                 ))
             }
