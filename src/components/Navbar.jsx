@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Badge } from './Badge';
 
 const Container = styled.div`
-    height: 60px;
+    height: 100px;
     margin: 0
 `
 
@@ -82,7 +82,7 @@ export const Navbar = () => {
                 </SearchContainer>
             </Left>
             <Center>
-                <Logo>BDShopper</Logo>
+                <Logo>BDSHOPPER.</Logo>
             </Center>
             <Right>
                 <MenuItem>SIGN IN</MenuItem>
