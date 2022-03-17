@@ -5,6 +5,13 @@ import styled from 'styled-components'
 const Container = styled.div`
     flex: 1;
     margin: 5px;
+    min-width: 300px;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(150, 210, 245, 0.5);
 `;
 
 const Circle = styled.div``;
@@ -14,6 +21,7 @@ const Image = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    width: 280px;
 `;
 const InfoContainer = styled.div`
     flex: 1;
