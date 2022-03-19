@@ -39,6 +39,7 @@ export const Newsletter = () => {
 		border: none;
 		color: white;
 		background-color: teal;
+		cursor: pointer;
 	`;
   return (
     <Container>
