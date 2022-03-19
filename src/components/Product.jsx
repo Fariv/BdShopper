@@ -12,9 +12,17 @@ const Container = styled.div`
     justify-content: center;
     flex-direction: column;
     background-color: rgba(150, 210, 245, 0.5);
+    position: relative;
 `;
 
-const Circle = styled.div``;
+const Circle = styled.div`
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 30px;
+`;
 
 const Image = styled.div`
     background-image: url(${props => props.src});
@@ -22,17 +30,19 @@ const Image = styled.div`
     background-size: cover;
     height: 100%;
     width: 280px;
+    z-index: 2;
+    margin: 30px 68px;
 `;
 const InfoContainer = styled.div`
     flex: 1;
-    padding: 25px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 97%;
+    box-shadow: 0px -8px 14px #009fff;
 `;
 const Icon = styled.div`
-    margin: 0 40px;
+    margin: 25px 40px;
     background-color: white;
     width: 40px;
     height: 40px;

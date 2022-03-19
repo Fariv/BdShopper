@@ -6,6 +6,9 @@ import CategoryImage1 from './assets/veggies.jpg';
 import CategoryImage2 from './assets/shirt_styles.jpg';
 import CategoryImage3 from './assets/light_jackets.jpg';
 
+import Shirt01 from "./assets/shirt_01.png";
+import Cauloflower from "./assets/cauliflower.png";
+
 export const sliderItems = [
     {
         id: 1,
@@ -55,7 +58,7 @@ export const popularProducts = [
     },
     {
         id:2,
-        img:"https://images-na.ssl-images-amazon.com/images/I/41wBqOS251L._AC_UL1024_.jpg",
+        img: Shirt01,
     },
     {
         id:3,
@@ -75,7 +78,7 @@ export const popularProducts = [
     },
     {
         id:7,
-        img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+        img: Cauloflower,
     },
     {
         id:8,
