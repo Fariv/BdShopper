@@ -25,9 +25,29 @@ const Image = styled.div`
 `;
 const InfoContainer = styled.div`
     flex: 1;
-    padding: 50px;
+    padding: 25px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 `;
-const Icon = styled.div``;
+const Icon = styled.div`
+    margin: 0 40px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 5px #009fff;
+    }
+    &:active {
+        box-shadow: 0px 0px 10px #009fff;
+    }
+`;
 
 export const Product = ({item}) => {
   return (
