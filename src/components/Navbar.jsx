@@ -3,16 +3,19 @@ import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import React from 'react'
 import styled from 'styled-components';
 import { Badge } from './Badge';
+import { mobile } from '../responsive';
 
 const Container = styled.div`
     height: 100px;
-    margin: 0
+    margin: 0;
+    ${mobile({height: "80px"})}
 `
 
 const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
     justify-contnet: space-between;
+    ${mobile({padding: "10px 0"})}
 `;
 
 const Left = styled.div`
