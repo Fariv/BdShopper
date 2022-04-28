@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import styled from 'styled-components';
 import React from 'react'
+import { mobile } from '../responsive';
 
 export const Newsletter = () => {
 	const Container = styled.div`
@@ -20,6 +21,7 @@ export const Newsletter = () => {
 		font-size: 24px;
 		font-weight: 300;
 		margin-bottom: 20px;
+		${mobile({ textAlign:"center" })}
 	`;
 	const InputContainer = styled.div`
 		width: 50%;
@@ -28,6 +30,7 @@ export const Newsletter = () => {
 		display: flex;
 		justify-content: space-between;
 		border: 1px solid lightgrey;
+		${mobile({ width:"80%" })}
 	`;
 	const Input = styled.input`
 		border: none;
