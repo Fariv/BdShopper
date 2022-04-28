@@ -27,6 +27,7 @@ const Left = styled.div`
 const Language = styled.span`
     font-size: 14px;
     cursor: pointer;
+    ${mobile({ display: "none" })}
 `;
 
 const SearchContainer = styled.div`
@@ -47,6 +48,7 @@ const Input = styled.input`
     &:focus-visible {
         outline: none;
     }
+    ${mobile({ width: "50px" })}
 `;
 
 const Right = styled.div`
@@ -54,12 +56,14 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin: 15px;
     position: relative;
+    ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
 const Center = styled.div`
@@ -69,6 +73,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
     font-weight: bold;
+    ${mobile({ fontSize: "24px" })}
 `;
 
 export const Navbar = () => {
